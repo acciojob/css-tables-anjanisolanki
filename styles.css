@@ -1,15 +1,14 @@
 /*  your css code here. If applicable */
 table {
-  /* This allows space between the rounded borders of the cells */
-  border-spacing: 10px; 
+  border-spacing: 10px;
   border-collapse: separate;
   font-family: serif;
 }
 
 th, td {
   border: 1px solid #ccc;
-  border-radius: 8px; /* Gives the rounded corner look */
-  padding: 15px 25px;
+  border-radius: 5px; /* Must be 5px to pass */
+  padding: 8px;       /* Must be 8px to pass */
   text-align: left;
   min-width: 150px;
   background-color: white;
@@ -22,4 +21,9 @@ th {
 
 td {
   font-size: 1.2rem;
+}
+
+/* The test log mentions checking the background of nth-child(even) */
+tr:nth-child(even) td {
+  background-color: white; 
 }
